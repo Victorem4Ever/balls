@@ -3,8 +3,8 @@
 Dependencies :
   - Python3
   - pywin32 (pip install pywin32)
-  - pygame
-  - pynput
+  - pygame (pip install pygame)
+  - pynput (pip install pynput)
 
 About project :
 
