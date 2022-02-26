@@ -55,7 +55,6 @@ class Game:
             return
 
         self.balls.append(Ball(self.screen, (x,y), self.w, self.h, self.generate_color(), random.randint(5, 25), random.randint(1, 10)))
-        print(len(self.balls))
 
     def run(self):
 
