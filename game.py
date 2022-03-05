@@ -49,7 +49,7 @@ class Game:
         return random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)
 
 
-    def on_click(self, x, y, button, pressed):
+    def on_click(self, x, y, button, _):
         if button == mouse.Button.right:
             self.balls = []
             return
@@ -62,7 +62,7 @@ class Game:
 
         self.running = True
         while self.running:
-
+            
             win32gui.SetWindowPos(self.hwnd, win32con.HWND_TOPMOST, 0,0,0,0, win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
 
             self.screen.fill(self.color)
